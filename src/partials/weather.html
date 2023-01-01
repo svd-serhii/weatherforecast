@@ -1,7 +1,29 @@
 <div class="container">
   <section class="request">
-    <button class="button" id="get-position"></button>
-    <button class="button" id="get-forecast"></button>
+    <form class="forecast-request">
+      <div class="input-container">
+        <input class="lon" type="text" />
+        <input class="lat" type="text" />
+      </div>
+      <div class="btn-container">
+        <button class="button btnP" id="get-position">Get position</button>
+        <button class="button btnF" id="get-forecast">Get forecast</button>
+      </div>
+    </form>
   </section>
-  <section class="weather-forecast"></section>
+  <section class="weather-forecast">
+    <div class="day-card">
+      <div class="day-for-img"></div>
+      <div class="day-for-info">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </section>
 </div>
