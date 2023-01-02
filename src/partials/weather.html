@@ -1,29 +1,46 @@
-<div class="container">
-  <section class="request">
-    <form class="forecast-request">
-      <div class="input-container">
-        <input class="lon" type="text" />
-        <input class="lat" type="text" />
+<main>
+  <div class="container">
+    <section class="request">
+      <div class="current-position">
+        <h2 class="city-name">Your current city -</h2>
       </div>
-      <div class="btn-container">
-        <button class="button btnP" id="get-position">Get position</button>
-        <button class="button btnF" id="get-forecast">Get forecast</button>
+      <div class="forecast-request">
+        <div class="input-container">
+          <input class="lon" type="text" />
+          <input class="lat" type="text" />
+        </div>
+        <div class="btn-container">
+          <button class="button btnP" id="get-location">Get location</button>
+          <button class="button btnF" id="get-forecast">Get forecast</button>
+        </div>
       </div>
-    </form>
-  </section>
-  <section class="weather-forecast">
-    <div class="day-card">
-      <div class="day-for-img"></div>
-      <div class="day-for-info">
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+    </section>
+    <section class="weather-forecast">
+      <div class="weather row gx-2">
+        <div class="col">
+          <div class="card" style="width: 30vw">
+            <h2 class="card-title p-2">Date</h2>
+            <img
+              src="http://openweathermap.org/img/wn/10d@4x.png"
+              class="card-img-top"
+              alt="Weather description"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Weather Label</h3>
+              <p class="card-text">High Temp Low Temp</p>
+              <p class="card-text">HighFeels like</p>
+              <p class="card-text">Pressure</p>
+              <p class="card-text">Humidty</p>
+              <p class="card-text">UV Index</p>
+              <p class="card-text">Precipitation</p>
+              <p class="card-text">Dew Point</p>
+              <p class="card-text">Wind speed and direction</p>
+              <p class="card-text">Sunrise</p>
+              <p class="card-text">Sunset</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
+</main>
