@@ -1,4 +1,5 @@
 export const API_KEY = '54314ea03ea88e3952e76d8fb7f8add2';
+export const GEO_URL = 'https://api.openweathermap.org/data/2.5/weather';
 export const BASE_URL = 'https://api.openweathermap.org/data/2.5/forecast';
 
 export function getRefs() {
@@ -8,6 +9,7 @@ export function getRefs() {
     btnF: document.querySelector('#get-forecast'),
     longitude: document.querySelector('.lon'),
     latitude: document.querySelector('.lat'),
-    row: document.querySelector('.weather .row'),
+    row: document.querySelector(' .row'),
+    city: document.querySelector('.forecast-request'),
   };
 }
